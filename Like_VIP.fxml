@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Like_Controller_VIP">
+   <children>
+      <Pane layoutX="-4.0" prefHeight="400.0" prefWidth="708.0">
+         <children>
+            <Text layoutX="184.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Find Post By Number of Like">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Button fx:id="noOfLike" layoutX="87.0" layoutY="275.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="530.0" style="-fx-background-color: skyblue;" text="Find Post" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <TextField fx:id="likeinput" layoutX="180.0" layoutY="156.0" prefHeight="48.0" prefWidth="344.0" promptText="Enter number of likes" />
+         </children>
+      </Pane>
+      <Button fx:id="home" layoutX="15.0" layoutY="20.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="79.0" style="-fx-background-color: skyblue;" text="Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_logout" layoutX="604.0" layoutY="19.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="87.0" style="-fx-background-color: skyblue;" text="LogOut" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

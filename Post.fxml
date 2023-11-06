@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="649.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Post_Controller">
+   <children>
+      <Pane layoutX="-3.0" prefHeight="400.0" prefWidth="679.0">
+         <children>
+            <Button fx:id="findPost" layoutX="96.0" layoutY="262.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="462.0" style="-fx-background-color: skyblue;" text="Find post" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Text layoutX="282.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Find post">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="findPostTextField" layoutX="167.0" layoutY="165.0" prefHeight="41.0" prefWidth="321.0" promptText="Enter Post ID" />
+         </children>
+      </Pane>
+      <Button fx:id="home" layoutX="25.0" layoutY="17.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="79.0" style="-fx-background-color: skyblue;" text="Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_logout" layoutX="544.0" layoutY="16.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="87.0" style="-fx-background-color: skyblue;" text="LogOut" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
