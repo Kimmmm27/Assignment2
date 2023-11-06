@@ -31,24 +31,7 @@ public class Post_Controller_VIP implements Initializable{
    
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-	
-		button_logout.setOnAction(new EventHandler<ActionEvent>() {
-			@Override
-			public void handle(ActionEvent event) {
-				MainUtility.changeScene(event, "/View/Login.fxml", "Login", null, null, null);
-				
-			}
-		});
 
-		home.setOnAction(new EventHandler<ActionEvent>() {
-			@Override
-			public void handle(ActionEvent event) {
-				MainUtility.changeScene(event, "/View/VIPdashboard.fxml", "Home", null, null, null);
-				
-			}
-		});
-		findPost.setOnAction(event -> {
-		    String postID = findPostTextField.getText();
 		    String postDetails = MainUtility.findPostDetails(postID);
 
 		    if (postDetails != null) {
