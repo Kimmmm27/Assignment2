@@ -51,28 +51,6 @@ public class MainUtility {
 		stage.setScene(new Scene(root, 700, 400));
 		stage.show();
 	}
-
-public static void signupUser(javafx.event.ActionEvent event, String Firstname, String Lastname, String Username, String Password) {
-    try {
-        String filename = "usersignUpData.txt";
-        BufferedWriter writer = new BufferedWriter(new FileWriter(filename, true)); 
-
-        // Check if the username already exists in the file
-        if (checkIfUserExists(filename, Username)) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setContentText("Username already Exists. Please change !!!");
-            alert.show();
-        } else {
-            // Write user data to the file
-            String userData = Firstname + "," + Lastname + "," + Username + "," + Password;
-            writer.write(userData);
-            writer.newLine();
-            writer.close();
-			changeScene(event, "/View/Login.fxml", "Login", null, null, null);
-        }
-    } catch (IOException e) {
-        e.printStackTrace();
-    }
 }
 
 private static boolean checkIfUserExists(String filename, String username) throws IOException {
