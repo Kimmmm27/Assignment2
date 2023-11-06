@@ -7,7 +7,19 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
+import application.MainUtility;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 
+public class EditProfile_Controller implements Initializable{
+	
+	@FXML
+	private Button button_logout;
+	
 	@FXML
 	private Button home;
 	
