@@ -37,15 +37,6 @@ public class DataVisualization_Controller implements Initializable{
 			}
 		});
 
-		home.setOnAction(new EventHandler<ActionEvent>() {
-			@Override
-			public void handle(ActionEvent event) {
-				MainUtility.changeScene(event, "/View/Dashboard.fxml", "Home", null, null, null);
-				
-			}
-		});
-		 int postLikes = MainUtility.getPostLikesCount();
-	        int usersCount = MainUtility.getUsersCount();
 
 	        ObservableList<PieChart.Data> pieChartData = FXCollections.observableArrayList(
 	            new PieChart.Data("Post Likes", postLikes),
